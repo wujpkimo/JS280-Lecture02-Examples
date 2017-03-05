@@ -45,14 +45,3 @@ $(function () {
         Render();
     });
 });
-
-console.log("妙蛙種子hp:" + Fushigidane.hp);
-console.log("小火龍hp:" + Hitokage.hp);
-console.log("小火龍發動攻擊");
-Hitokage.attack(Fushigidane);
-console.log("妙蛙種子hp:" + Fushigidane.hp);
-console.log("小火龍hp:" + Hitokage.hp);
-console.log("妙蛙種子發動攻擊");
-Fushigidane.attack(Hitokage);
-console.log("妙蛙種子hp:" + Fushigidane.hp);
-console.log("小火龍hp:" + Hitokage.hp);
