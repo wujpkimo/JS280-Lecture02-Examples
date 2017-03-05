@@ -1,7 +1,3 @@
-function attack(pokemon) {
-    pokemon.HP -= 20;
-}
-
 function Pokemon(nationalNo, hp, type, species, height, weight, abilities, localNo, japanese) {
     this.nationalNo = nationalNo;
     this.hp = hp;
@@ -32,6 +28,23 @@ var Fushigidane = new Pokemon(
     [1, 226, 231, 80],
     "Fushigidane");
 
+$(function () {
+    function Render() {
+        $("#fushigidane-name").text(Fushigidane.japanese);
+        $("#fushigidane-hp").text(Fushigidane.hp);
+        $("#hitokage-name").text(Hitokage.japanese);
+        $("#hitokage-hp").text(Hitokage.hp);
+    }
+    Render();
+    $("#fushigidane-btn").click(function () {
+        Fushigidane.attack(Hitokage);
+        Render();
+    });
+    $("#hitokage-btn").click(function () {
+        Hitokage.attack(Fushigidane);
+        Render();
+    });
+});
 
 console.log("妙蛙種子hp:" + Fushigidane.hp);
 console.log("小火龍hp:" + Hitokage.hp);
