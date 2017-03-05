@@ -1,0 +1,18 @@
+{
+    "NationalNo": 1,
+    "Type": [
+        "GRASS",
+        "POISON"
+    ],
+    "Species": "Seed Pokémon",
+    "Height": 0.71,
+    "Weight": 6.9,
+    "Abilities": "Overgrow",
+    "LocalNo": [
+        1,
+        226,
+        231,
+        80
+    ],
+    "Japanese": "Fushigidane"
+}
